@@ -35,7 +35,7 @@ if(isset($_POST['f_username'])){
         }
         else if($row['user_type'] == 'C'){
             //common user
-            header("location: common_user/index.php");
+            header("location: common_user/index.php?page=home");
         }
         else{
             header("location: index.php?error=user_not_found");
